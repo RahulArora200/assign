@@ -1,0 +1,177 @@
+/* Reset default margin and padding */
+html, body, header, nav, ul, li, section, footer, table, th, td, figure, img, p, iframe {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+    color: #333;
+    text-transform: uppercase;
+}
+
+nav {
+    text-align: center;
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    padding: 20px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #fff;
+}
+
+.container {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin: 10px;
+}
+
+.container img {
+    margin: 0 10px;
+    padding: 10px;
+}
+
+figcaption {
+    text-align: center;
+}
+table{
+    padding: 10px;
+}
+ th,  td {
+    border: 2px solid black;
+}
+header h1 {
+    transition: color 0.5s ease-in-out;
+}
+
+header h1:hover {
+    color: rgb(104, 104, 219); /* Change the color to whatever you desire */
+}
+/* Define the keyframes for the animation */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Apply the animation to the intro section */
+  #intro {
+    animation: fadeIn 1s ease-out; /* Change the duration and timing function as needed */
+  }
+
+  nav ul li a {
+    color: yellow; // Change menu text color to yellow
+    &:hover {
+        color: white; // Change menu text hover color to white
+    }
+}
+button {
+    background-color: red; // Change button background color to red
+}
+.Contact {
+    border: 1px dashed black; // Apply dashed border to the Contact Us form
+}
+button::after {
+    content: attr(data-text); // Add "after" effect to button names
+    text-transform: uppercase; // Make button names capital
+}
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+/* StyleR.css */
+
+/* Add styles for the fixed navigation bar */
+header nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #333; /* Change the background color as needed */
+    z-index: 1000; /* Ensure the navbar stays on top of other content */
+}
+
+/* Add padding to the body to compensate for the fixed navbar */
+body {
+    padding-top: 40px; /* Adjust as needed based on your navbar height */
+}
+
+/* Style the links in the navbar */
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff; /* Change the color of the links */
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+header nav ul li a:hover {
+    background-color: #ddd; /* Change the background color on hover */
+    color: #000; /* Change the color of the links on hover */
+}
